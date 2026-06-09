@@ -36,9 +36,9 @@ jobs:
 
     - name: Sync ArgoCD
       run: |
-        argocd login ${{ secrets.ARGOCD_SERVER }} \
+        argocd login  a79153e9c5afc462fb690c366a7df463-437429930.us-east-1.elb.amazonaws.com \
           --username admin \
-          --password ${{ secrets.ARGOCD_PASSWORD }} \
+          --password Atharva@7823 \
           --insecure
         argocd app sync userprofile-blue-green --force
         echo "Pipeline SUCCESS!"
