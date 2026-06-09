@@ -40,5 +40,5 @@ jobs:
           --username admin \
           --password Atharva@7823 \
           --insecure
-        argocd app sync userprofile-blue-green --force
+        argocd app sync atharva-shine --force
         echo "Pipeline SUCCESS!"
